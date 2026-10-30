@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VictoryArena</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+    }
+    header {
+      background: #07111f;
+      padding: 22px 15px;
+      text-align: center;
+      border-bottom: 2px solid #16c784;
+    }
+    header h1 { color: #16c784; margin: 0; }
+    header p { color: #cbd5e1; }
+    .points {
+      background: #173b32;
+      margin: 18px;
+      padding: 18px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .points strong { color: #16c784; font-size: 27px; }
+    main { padding: 0 16px 30px; }
+    .section-title { color: #16c784; margin-top: 25px; }
+    .games {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .game {
+      background: #1e293b;
+      padding: 18px 10px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .game h3 { margin: 5px 0 10px; }
+    button {
+      background: #16c784;
+      color: #07111f;
+      border: 0;
+      border-radius: 7px;
+      padding: 11px 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .notice {
+      color: #cbd5e1;
+      font-size: 13px;
+      text-align: center;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏆 VictoryArena</h1>
+    <p>Play • Predict • Compete</p>
+  </header>
+
+  <div class="points">
+    <p>YOUR DEMO BALANCE</p>
+    <strong id="balance">1,000</strong>
+    <p>Virtual points only</p>
+  </div>
+
+  <main>
+    <h2 class="section-title">⚽ Sports Predictions</h2>
+    <div class="games">
+      <div class="game">
+        <h3>⚽ Football</h3>
+        <p>Make match predictions</p>
+        <button onclick="alert('Football predictions coming soon!')">Explore</button>
+      </div>
+      <div class="game">
+        <h3>🏀 Basketball</h3>
+        <p>Predict game results</p>
+        <button onclick="alert('Basketball predictions coming soon!')">Explore</button>
+      </div>
+    </div>
+
+    <h2 class="section-title">🎮 Mini Games</h2>
+    <div class="games">
+      <div class="game">
+        <h3>🐔 Chicken Dash</h3>
+        <p>Test your timing</p>
+        <button onclick="alert('Chicken Dash coming soon!')">Play</button>
+      </div>
+      <div class="game">
+        <h3>💎 Gems & Mines</h3>
+        <p>Find hidden gems</p>
+        <button onclick="alert('Gems & Mines coming soon!')">Play</button>
+      </div>
+    </div>
+
+    <h2 class="section-title">🏅 Leaderboard</h2>
+    <div class="game">
+      <p>1. Player One — 500 points</p>
+      <p>2. Player Two — 350 points</p>
+      <p>3. Player Three — 200 points</p>
+    </div>
+
+    <p class="notice">
+      VictoryArena is a demo platform. No real-money betting or prizes.
+    </p>
+  </main>
+</body>
+</html>
